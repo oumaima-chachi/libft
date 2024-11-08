@@ -6,7 +6,7 @@
 /*   By: ochachi <ochachi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 14:44:07 by ochachi           #+#    #+#             */
-/*   Updated: 2024/11/07 20:34:58 by ochachi          ###   ########.fr       */
+/*   Updated: 2024/11/08 18:38:07 by ochachi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,13 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-#include <stdio.h>
-int	main(void)
-{
-	char	src[] = "abcdefg";
 
-	//char dst[6];
-	//char num[] = ft_memcpy(dst ,src, 4);
-	printf("%s", ft_memmove(src + 2 ,src, 4));
-}*/
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	char	src[] = "abcdefg";
+
+// 	//char dst[6];
+// 	//char num[] = ft_memcpy(dst ,src, 4);
+// 	printf("%s", ft_memmove(src + 2 ,src, 4));
+// }

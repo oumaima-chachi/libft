@@ -1,3 +1,6 @@
+
+
+
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -6,16 +9,19 @@
 /*   By: ochachi <ochachi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 14:26:37 by ochachi           #+#    #+#             */
-/*   Updated: 2024/11/02 21:49:01 by ochachi          ###   ########.fr       */
+/*   Updated: 2024/11/08 16:21:36 by ochachi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <fcntl.h>
+#include <unistd.h>
 
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+
 /*
 #include <unistd.h>
 
@@ -37,3 +43,10 @@ int	main(void)
 	return (0);
 }
 */
+/*
+int	main(void)
+{
+	int fd = open("example.txt", O_WRONLY | O_CREAT, 0644);
+	ft_putchar_fd('j', fd);
+	printf("%d\n", fd);
+}*/

@@ -6,7 +6,7 @@
 /*   By: ochachi <ochachi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 21:55:58 by ochachi           #+#    #+#             */
-/*   Updated: 2024/11/06 23:57:03 by ochachi          ###   ########.fr       */
+/*   Updated: 2024/11/08 21:52:15 by ochachi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,41 +19,42 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	if (little[0] == '\0')
-	{
 		return ((char *)big);
-	}
 	while (big[i] != '\0' && len > i)
 	{
 		j = 0;
 		if (big[i] == little[j])
 		{
-			while (big[i + j] == little[j] && i + j < len)
+			while (big[i + j] && little[j] && big[i + j] == little[j] && i
+				+ j < len)
 			{
 				j++;
 			}
 			if (little[j] == '\0')
-			{
 				return ((char *)big + i);
-			}
 		}
 		i++;
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
 
-int	main(void) {
-	char *la = "aaabcabcd";
-	char *sma = "cd";
-	char *ptr;
+// #include <stdio.h>
 
-	ptr = ft_strnstr(la, sma, 8);
+// int	main(void)
+// {
+// 	char	*la;
+// 	char	*sma;
+// 	char	*ptr;
 
-	if (ptr != NULL) {
-		printf("Found substring: %s\n", ptr);
-	} else {
-		printf("Substring not found.\n");
-	}
-}
-*/
+// 	la = "aaabcabcd";
+// 	sma = "cd";
+// 	ptr = ft_strnstr(la, sma, 12);
+// 	if (ptr != NULL)
+// 	{
+// 		printf("Found substring: %s\n", ptr);
+// 	}
+// 	else
+// 	{
+// 		printf("Substring not found.\n");
+// 	}
+// }

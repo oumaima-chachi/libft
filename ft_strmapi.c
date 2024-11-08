@@ -6,7 +6,7 @@
 /*   By: ochachi <ochachi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 10:20:54 by ochachi           #+#    #+#             */
-/*   Updated: 2024/11/04 22:03:24 by ochachi          ###   ########.fr       */
+/*   Updated: 2024/11/08 21:08:56 by ochachi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	i;
 
 	if (!s || !f)
-	{
 		return (NULL);
-	}
 	len_s = ft_strlen(s);
 	strmapi = malloc(len_s + 1);
 	if (!strmapi)

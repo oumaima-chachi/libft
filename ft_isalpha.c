@@ -6,7 +6,7 @@
 /*   By: ochachi <ochachi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 21:33:42 by ochachi           #+#    #+#             */
-/*   Updated: 2024/11/07 11:25:26 by ochachi          ###   ########.fr       */
+/*   Updated: 2024/11/08 17:30:23 by ochachi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ int	ft_isalpha(int c)
 }
 /*
 #include <stdio.h>
-int main()
-{
-	char a = 129;
-	printf("%d", ft_isalpha(a));
 
+int	main(void)
+{
+	int a = 123457;
+	printf("%d\n", ft_isalpha(a));
 }*/

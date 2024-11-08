@@ -6,7 +6,7 @@
 /*   By: ochachi <ochachi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:32:55 by ochachi           #+#    #+#             */
-/*   Updated: 2024/11/06 23:53:43 by ochachi          ###   ########.fr       */
+/*   Updated: 2024/11/08 21:05:10 by ochachi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	main(void)
 	char	dest[20];
 	char	src[] = "oumaima";
 
-	strlcpy(dest,src,20);
-	printf("dest is %s",dest);
-	printf("src is %s", src);
+	size_t i = strlcpy(dest,src,20);
+	printf("dest is %s\n",dest);
+	printf("src is %zu", i);
 }*/

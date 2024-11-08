@@ -6,7 +6,7 @@
 /*   By: ochachi <ochachi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 11:32:16 by ochachi           #+#    #+#             */
-/*   Updated: 2024/11/07 22:26:33 by ochachi          ###   ########.fr       */
+/*   Updated: 2024/11/08 12:33:33 by ochachi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static void	*ft_free(int i, char **split)
 	int	j;
 
 	j = 0;
-	while(j < i)
+	while (j < i)
 	{
 		free(split[j]);
 		j++;

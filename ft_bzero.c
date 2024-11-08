@@ -6,7 +6,7 @@
 /*   By: ochachi <ochachi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 12:05:31 by ochachi           #+#    #+#             */
-/*   Updated: 2024/11/07 18:20:14 by ochachi          ###   ########.fr       */
+/*   Updated: 2024/11/08 17:25:14 by ochachi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_bzero(void *a, size_t n)
 /*#include <stdio.h>
 int main()
 {
-	char but[10];
-	ft_bzero(but, sizeof(but));
-	printf("%d,%d,%d,%d\n",but[0],but[1],but[2],but[4]);
+	int but[] = {5,2,3,6};
+	ft_bzero(but, 12);
+	printf("%d,%d,%d,%d\n",but[0],but[1],but[2],but[3]);
 }*/
