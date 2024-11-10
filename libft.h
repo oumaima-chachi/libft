@@ -6,15 +6,13 @@
 /*   By: ochachi <ochachi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 21:09:32 by ochachi           #+#    #+#             */
-/*   Updated: 2024/11/07 20:46:35 by ochachi          ###   ########.fr       */
+/*   Updated: 2024/11/09 01:08:42 by ochachi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stdio.h>
 # include <stdlib.h>
-# include <string.h>
 # include <unistd.h>
 
 typedef struct s_list
